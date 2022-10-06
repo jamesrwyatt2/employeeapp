@@ -33,7 +33,8 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
-
+<!--    Package as war -->
+    <packaging>war</packaging>
     <build>
         <plugins>
             <plugin>
@@ -41,6 +42,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
+        <finalName>${project.artifactId}</finalName>
     </build>
 
 </project>
